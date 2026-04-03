@@ -1,11 +1,12 @@
-# App CIVA - API Buses
-Este repositorio contiene el backend de un sistema de gestión de buses desarrollado con Spring Boot.
+# 🚍 Sistema de Gestión de Buses
 
-## Estado actual
-- Backend funcional (Spring Boot)
-- API REST documentada con Swagger
+Aplicación full stack desarrollada con **Spring Boot y React**, que permite gestionar buses mediante una API REST con paginación.
 
-## Próximos pasos
-- Desarrollo de frontend con React
-- Implementación de autenticación (JWT)
-- Paginación
+---
+
+# 🖥️ Frontend (React)
+
+Interfaz que consume la API para mostrar la lista de buses.
+
+📸 Vista principal:<img width="1118" height="448" alt="react_1" src="https://github.com/user-attachments/assets/61e71980-6c6d-474b-80ce-bec54018a8b9" />
+
