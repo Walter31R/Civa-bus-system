@@ -2,12 +2,12 @@ package com.example.Backend_Civa.Controller;
 
 import com.example.Backend_Civa.Model.Bus;
 import com.example.Backend_Civa.Service.BusService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+@CrossOrigin(origins = "http://localhost:5173")
 
 @RestController
 @RequestMapping("/bus")
@@ -19,8 +19,8 @@ public class BusController {
     }
 
     @GetMapping
-    public List<Bus> listarBuses() {
-        return busService.listarBuses();
+    public Page<Bus> listar(Pageable pageable) {
+        return busService.listarBuses(pageable);
     }
 
     @GetMapping("/{id}")

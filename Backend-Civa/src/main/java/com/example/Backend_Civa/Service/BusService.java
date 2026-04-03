@@ -1,8 +1,12 @@
 package com.example.Backend_Civa.Service;
 
 import com.example.Backend_Civa.Model.Bus;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import com.example.Backend_Civa.Repository.BusRepository;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
 
@@ -13,12 +17,16 @@ public class BusService {
     public BusService(BusRepository busRepository) {
         this.busRepository = busRepository;
     }
-    public List<Bus> listarBuses() {
-        return busRepository.findAll();
+
+    public Page<Bus> listarBuses(Pageable pageable) {
+        return busRepository.findAll(pageable);
     }
+
     public Bus obtenerBusPorId(Long id) {
         return busRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Bus no encontrado"));
+                .orElseThrow(() -> new ResponseStatusException(
+                        HttpStatus.NOT_FOUND, "Bus no encontrado"
+                ));
     }
 
 
