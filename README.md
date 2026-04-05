@@ -20,7 +20,7 @@ Interfaz que consume la API para mostrar el inicio de sesión, la lista de buses
 
 <img width="819" height="450" alt="react_3" src="https://github.com/user-attachments/assets/ad4f8793-bb7c-4c79-9910-77e9e1e83e8a" />
 
---
+---
 
 # 📘 Documentación de API (Swagger)
 
