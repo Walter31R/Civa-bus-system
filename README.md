@@ -18,9 +18,9 @@ Interfaz que consume la API para mostrar el inicio de sesión, la lista de buses
 
 📸 Búsqueda por ID:
 
-<img width="819" height="450" alt="react_3" src="https://github.com/user-attachments/assets/c613ca53-4737-485f-b![Uploading react_3.png…]()
-5b1-fed5343f2ccc" />
----
+<img width="819" height="450" alt="react_3" src="https://github.com/user-attachments/assets/ad4f8793-bb7c-4c79-9910-77e9e1e83e8a" />
+
+--
 
 # 📘 Documentación de API (Swagger)
 
