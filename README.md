@@ -1,14 +1,18 @@
 # 🚍 Sistema de Gestión de Buses
 
-Aplicación full stack desarrollada con **Spring Boot y React**, que permite gestionar buses mediante una API REST con paginación.
+Aplicación full stack desarrollada con **Spring Boot y React**, que permite gestionar buses mediante una API REST con paginación y con autenticación de seguridad.
 
 ---
 
 # 🖥️ Frontend (React)
 
-Interfaz que consume la API para mostrar la lista de buses y la busqueda por ID.
+Interfaz que consume la API para mostrar el inicio de sesión la lista de buses y la busqueda por ID.
+📸 Login:
+<img width="450" height="394" alt="login" src="https://github.com/user-attachments/assets/f2190829-ba27-42c4-bac0-e1b4932d63ff" />
 
-📸 Vista principal:<img width="1118" height="448" alt="react_1" src="https://github.com/user-attachments/assets/61e71980-6c6d-474b-80ce-bec54018a8b9" />
+
+📸 Vista principal: <img width="1132" height="454" alt="react_1" src="https://github.com/user-attachments/assets/170dfac1-1633-481e-8be1-33a9ed97480d" />
+
 
 📸Busqueda por ID: 
 
@@ -97,6 +101,12 @@ Base de datos relacional en MySQL con las siguientes tablas:
 2. Instalar Dependencias: npm install
 3. Correr el proyecto: npm run dev
    
+---
+## 🔑 Credenciales
+
+Usuario: admin  
+Contraseña: 1234
+
 ---
 
 # 📁 Estructura del proyecto
